@@ -13,6 +13,7 @@ Archivo → Abrir carpeta (esta). Luego Terminal → Nuevo terminal y en el desp
 | Linux / WSL | la que sale. |
 
 **Windows, si Git Bash no aparece en el desplegable:** reinicia VS Code. Si sigue sin salir, botón derecho sobre la carpeta del repo en el Explorador de archivos (Windows 11: "Mostrar más opciones") → **Git Bash Here**, y sigue desde el paso 2 ahí.
+**Si en tu Windows no hay manera:** en GitHub, botón verde `Code → Codespaces → Create codespace`. Se abre un VS Code en el navegador con un Linux de verdad y el repo ya dentro. Sigue desde el paso 2.
 
 ## 2. Empieza
 
