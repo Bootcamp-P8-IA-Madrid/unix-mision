@@ -29,4 +29,4 @@ cd ../.. && bash comprobar.sh techo 4
 - `echo $PATH`: ¿por qué `python3` funciona desde cualquier sitio y tu script necesita `./`?
 - ¿Diferencia entre `AGENTE=x ./herramientas/revelar.sh` y `export AGENTE=x`? Prueba en una terminal nueva.
 
-Siguiente: [Misión 5](05-agente.md) o entrega (README)
+Siguiente: [Misión 5](05-automatiza.md) o entrega (README)

@@ -24,8 +24,8 @@ cat > LEEME.txt <<'TXT'
 ========================================================
    MISION: LA CLAVE PERDIDA
 ========================================================
-Un agente de IA ha estado "ordenando" este proyecto sin
-supervision y lo ha dejado hecho un desastre. Antes de
+Un script descontrolado ha estado "ordenando" este proyecto
+y lo ha dejado hecho un desastre. Antes de
 irse, partio la CLAVE DE ACCESO en 4 fragmentos y los
 escondio por el proyecto.
 

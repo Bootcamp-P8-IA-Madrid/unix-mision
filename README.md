@@ -1,6 +1,6 @@
 # La clave perdida · misiones de terminal
 
-Un agente de IA ha destrozado un proyecto y ha escondido la clave de acceso en 4 fragmentos. Recupéralos usando solo la terminal.
+Un script descontrolado ha destrozado un proyecto y ha escondido la clave de acceso en 4 fragmentos. Recupéralos usando solo la terminal.
 
 ## 1. Abre el repo en VS Code y una terminal UNIX
 
@@ -31,7 +31,7 @@ bash nivel.sh               # 5 preguntas: te dice por dónde empezar
 | 2 | [Buscar](misiones/02-buscar.md) · `grep` `head` `tail` `\|` | 2 |
 | 3 | [Ordenar](misiones/03-ordenar.md) · `mkdir` `mv` `*` `chmod` | 3 |
 | 4 | [Ejecutar](misiones/04-ejecutar.md) · `./script` `export` `>` | 4 |
-| 5 | [Tu primer agente](misiones/05-agente.md) · Python (si ya vuelas) | |
+| 5 | [Automatízalo](misiones/05-automatiza.md) · Python (si ya vuelas) | |
 
 Cada misión tiene **PISO** (todo el mundo, te da el fragmento) y **TECHO** (si sabes un poco mas). Usa la [chuleta](CHULETA.md) en caso de ser necesario.
 
@@ -44,7 +44,7 @@ bash comprobar.sh FRAGMENTO         # un fragmento
 bash comprobar.sh orden             # misión 3: ¿descargas ordenada?
 bash comprobar.sh techo 1 NUMERO    # un techo
 bash comprobar.sh F1-F2-F3-F4       # la clave completa
-bash comprobar.sh agente            # misión 5
+bash comprobar.sh python            # misión 5
 bash comprobar.sh gracias NOMBRE    # registra quién te ayudó
 bash comprobar.sh progreso          # tu tabla
 bash setup.sh --reset               # si rompes algo

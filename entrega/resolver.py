@@ -1,10 +1,10 @@
-"""Misión 5 · Tu primer agente. Pruébalo con:  bash comprobar.sh agente"""
+"""Misión 5 · Automatízalo. Pruébalo con:  bash comprobar.sh python"""
 import os
 import subprocess
 
 
 def ejecutar(comando, env=None):
-    """Tu única herramienta: ejecuta un comando y devuelve (salida, codigo_de_salida)."""
+    """Ejecuta un comando de terminal y devuelve (salida, codigo_de_salida)."""
     print(f"ejecuto: {comando}")
     resultado = subprocess.run(
         ["bash", "-c", comando], capture_output=True, text=True,   # siempre bash, también en Windows
@@ -38,6 +38,6 @@ def resolver():
 
 if __name__ == "__main__":
     if not os.path.isdir("proyecto"):
-        print("Ejecútame desde la carpeta mision/ :  cd mision && python3 ../entrega/agente.py   (o python)")
+        print("Ejecútame desde la carpeta mision/ :  cd mision && python3 ../entrega/resolver.py   (o python)")
         raise SystemExit(1)
     resolver()

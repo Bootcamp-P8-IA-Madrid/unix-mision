@@ -5,7 +5,7 @@
 #   bash comprobar.sh F1-F2-F3-F4        (clave final)
 #   bash comprobar.sh orden              (misión 3: ¿descargas ordenada?)
 #   bash comprobar.sh techo N RESPUESTA  (ej: bash comprobar.sh techo 1 123)
-#   bash comprobar.sh agente             (misión 5: ejecuta tu entrega/agente.py)
+#   bash comprobar.sh python             (misión 5: ejecuta tu entrega/resolver.py)
 #   bash comprobar.sh gracias NOMBRE     (registra quién te ha ayudado)
 #   bash comprobar.sh progreso           (muestra tu tabla)
 cd "$(dirname "$0")" || exit 1
@@ -26,7 +26,7 @@ progreso() {
     printf "  %-26s %s    %s\n" "${nombres[$i]}" "$pi" "$te"
   done
   pi=" - "; grep -qx "piso5" "$P" && pi=" X "
-  printf "  %-26s %s\n" "5 Tu primer agente" "$pi"
+  printf "  %-26s %s\n" "5 Automatízalo" "$pi"
   grep -qx "clave" "$P" && echo "" && echo "  CLAVE COMPLETA: sí"
   m=$(grep "^mentor:" "$P" | cut -d: -f2 | sort -u | tr '\n' ' ')
   [ -n "$m" ] && echo "  Te han ayudado: $m"
@@ -66,11 +66,11 @@ case "$1" in
       *) echo "Uso: bash comprobar.sh techo N RESPUESTA   (N de 1 a 4)";;
     esac
     exit 0;;
-  agente)
-    [ -f entrega/agente.py ] || { echo "No existe entrega/agente.py. Lee misiones/05-agente.md"; exit 1; }
-    echo "Ejecutando tu agente sobre mision/ ..."
-    salida=$(cd mision && $(py) ../entrega/agente.py 2>&1); echo "$salida" | tail -15
-    if echo "$salida" | grep -q "L4-T3RM1N4L-N0-MU3RD3"; then marca piso5; echo ""; echo "TU AGENTE HA RESUELTO LA MISIÓN SOLO. Eso es un agente con herramientas."; else echo ""; echo "Tu agente todavía no imprime la clave completa. Sigue."; fi
+  python)
+    [ -f entrega/resolver.py ] || { echo "No existe entrega/resolver.py. Lee misiones/05-automatiza.md"; exit 1; }
+    echo "Ejecutando tu entrega/resolver.py sobre mision/ ..."
+    salida=$(cd mision && $(py) ../entrega/resolver.py 2>&1); echo "$salida" | tail -15
+    if echo "$salida" | grep -q "L4-T3RM1N4L-N0-MU3RD3"; then marca piso5; echo ""; echo "TU SCRIPT HA RESUELTO LA MISIÓN SOLO. Misión 5 completada."; else echo ""; echo "Tu script todavía no imprime la clave completa. Sigue."; fi
     exit 0;;
 esac
 
