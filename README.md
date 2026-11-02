@@ -2,18 +2,17 @@
 
 Un agente de IA ha destrozado un proyecto y ha escondido la clave de acceso en 4 fragmentos. Recupéralos usando solo la terminal.
 
-## 1. Abre la carpeta del repo en VS Code y una terminal UNIX
+## 1. Abre el repo en VS Code y una terminal UNIX
 
 Archivo → Abrir carpeta (esta). Luego Terminal → Nuevo terminal y en el desplegable `+ ˅` elige:
 
 | Sistema | Terminal |
 |---|---|
-| Windows | **Git Bash** (instala [Git para Windows](https://git-scm.com/download/win) si no aparece, y reinicia VS Code). Si el prompt empieza por `PS C:\` o `ls -la` te dice *A parameter cannot be found that matches parameter name 'la'*, estás en PowerShell: cambia. |
+| Windows | **Git Bash**. Si el prompt empieza por `PS C:\` o `ls -la` te dice *A parameter cannot be found that matches parameter name 'la'*, estás en PowerShell: cambia. |
 | macOS | la que sale (zsh). Ya es UNIX. |
 | Linux / WSL | la que sale. |
 
-**Windows, si Git Bash no aparece en VS Code:** botón derecho sobre la carpeta del repo en el Explorador de archivos (Windows 11: "Mostrar más opciones") → **Git Bash Here**. Es la misma terminal, fuera de VS Code. Sigue desde el paso 2 ahí.
-**Si no puedes instalar Git:** en GitHub, botón verde `Code → Codespaces → Create codespace`. Se abre un VS Code en el navegador con un Linux de verdad y el repo ya dentro. Sigue desde el paso 2.
+**Windows, si Git Bash no aparece en el desplegable:** reinicia VS Code. Si sigue sin salir, botón derecho sobre la carpeta del repo en el Explorador de archivos (Windows 11: "Mostrar más opciones") → **Git Bash Here**, y sigue desde el paso 2 ahí.
 
 ## 2. Empieza
 
@@ -33,7 +32,7 @@ bash nivel.sh               # 5 preguntas: te dice por dónde empezar
 | 4 | [Ejecutar](misiones/04-ejecutar.md) · `./script` `export` `>` | 4 |
 | 5 | [Tu primer agente](misiones/05-agente.md) · Python (si ya vuelas) | |
 
-Cada misión tiene **PISO** (todo el mundo, te da el fragmento) y **TECHO** (si ya sabes). Quien acaba el techo es **mentor** de su mesa: habla, no teclea. La [chuleta](CHULETA.md) se usa siempre.
+Cada misión tiene **PISO** (todo el mundo, te da el fragmento) y **TECHO** (si sabes un poco mas). Usa la [chuleta](CHULETA.md) en caso de ser necesario.
 
 ## 4. Comprueba
 
