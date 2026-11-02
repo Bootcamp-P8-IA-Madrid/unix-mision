@@ -1,0 +1,5 @@
+# Carpeta generada por setup.sh (cada alumno la crea en su equipo)
+mision/
+__pycache__/
+*.pyc
+.DS_Store

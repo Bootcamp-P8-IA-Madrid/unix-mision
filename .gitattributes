@@ -1,0 +1,9 @@
+# Fuerza saltos de línea LF en todo: en Windows, git convertiría los .sh a CRLF y bash fallaría con "\r: command not found"
+* text=auto eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.png binary
+*.jpg binary
+*.pptx binary
+*.pdf binary
