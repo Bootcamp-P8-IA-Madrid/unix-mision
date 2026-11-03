@@ -4,3 +4,7 @@ piso3
 piso4
 clave
 piso5
+techo1
+techo2
+techo3
+techo4
