@@ -16,5 +16,4 @@ elif [ $p -le 3 ]; then
   echo "Haz la misión 1 rápido (5 min) y a partir de la 2 ve a por el TECHO."
 else
   echo "Haz el PISO de las 4 misiones a toda velocidad (son 15 min para ti), ve a por los TECHOS y luego a la misión 5: automatizarlo en Python."
-  echo "Y recuerda: cuando termines, eres mentor de tu mesa. Hablas, no tecleas."
 fi

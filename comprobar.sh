@@ -6,7 +6,6 @@
 #   bash comprobar.sh orden              (misión 3: ¿descargas ordenada?)
 #   bash comprobar.sh techo N RESPUESTA  (ej: bash comprobar.sh techo 1 123)
 #   bash comprobar.sh python             (misión 5: ejecuta tu entrega/resolver.py)
-#   bash comprobar.sh gracias NOMBRE     (registra quién te ha ayudado)
 #   bash comprobar.sh progreso           (muestra tu tabla)
 cd "$(dirname "$0")" || exit 1
 P=entrega/progreso.txt
@@ -28,18 +27,13 @@ progreso() {
   pi=" - "; grep -qx "piso5" "$P" && pi=" X "
   printf "  %-26s %s\n" "5 Automatízalo" "$pi"
   grep -qx "clave" "$P" && echo "" && echo "  CLAVE COMPLETA: sí"
-  m=$(grep "^mentor:" "$P" | cut -d: -f2 | sort -u | tr '\n' ' ')
-  [ -n "$m" ] && echo "  Te han ayudado: $m"
   echo ""
 }
 
-[ -z "$1" ] && { sed -n '2,10p' "$0" | sed 's/^# \{0,1\}//'; exit 1; }
+[ -z "$1" ] && { sed -n '2,9p' "$0" | sed 's/^# \{0,1\}//'; exit 1; }
 
 case "$1" in
   progreso) progreso; exit 0;;
-  gracias)
-    [ -z "$2" ] && { echo "Uso: bash comprobar.sh gracias NOMBRE"; exit 1; }
-    echo "mentor:$2" >> "$P"; echo "Registrado: $2 te ha ayudado. Eso cuenta para su techo."; exit 0;;
   orden)
     d=mision/proyecto/descargas
     [ -d "$d" ] || { echo "No encuentro mision/proyecto/descargas. ¿Has ejecutado bash setup.sh?"; exit 1; }

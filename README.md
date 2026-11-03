@@ -45,7 +45,6 @@ bash comprobar.sh orden             # misión 3: ¿descargas ordenada?
 bash comprobar.sh techo 1 NUMERO    # un techo
 bash comprobar.sh F1-F2-F3-F4       # la clave completa
 bash comprobar.sh python            # misión 5
-bash comprobar.sh gracias NOMBRE    # registra quién te ayudó
 bash comprobar.sh progreso          # tu tabla
 bash setup.sh --reset               # si rompes algo
 ```
